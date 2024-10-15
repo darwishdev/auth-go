@@ -1,4 +1,4 @@
-module github.com/supabase-community/auth-go
+module github.com/darwishdev/auth-go
 
 go 1.18
 
