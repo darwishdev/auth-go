@@ -28,9 +28,9 @@ type client struct {
 //
 // This function does not validate your project reference. Requests will fail
 // if you pass in an invalid project reference.
-func New(projectReference string, apiKey string) Client {
+func New(projectReference string, apiKey string, isDevelopment bool) Client {
 	return &client{
-		Client: endpoints.New(projectReference, apiKey),
+		Client: endpoints.New(projectReference, apiKey, isDevelopment),
 	}
 }
 

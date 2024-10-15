@@ -13,8 +13,11 @@ type Client struct {
 	token   string
 }
 
-func New(projectReference string, apiKey string) *Client {
-	baseURL := fmt.Sprintf("https://%s.supabase.co/auth/v1", projectReference)
+func New(projectReference string, apiKey string, isDevelopment bool) *Client {
+	var baseURL = "http://127.0.0.1:54321/auth/v1"
+	if !isDevelopment {
+		baseURL = fmt.Sprintf("https://%s.supabase.co/auth/v1", projectReference)
+	}
 	return &Client{
 		client: http.Client{
 			Timeout: time.Second * 10,
