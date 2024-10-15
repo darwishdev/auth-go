@@ -1,9 +1,9 @@
 # auth-go
 
-![example branch parameter](https://github.com/supabase-community/auth-go/actions/workflows/test.yaml/badge.svg?branch=main)
-[![codecov](https://codecov.io/gh/supabase-community/auth-go/branch/main/graph/badge.svg?token=JQQJKETMRX)](https://codecov.io/gh/supabase-community/auth-go)
-![GitHub](https://img.shields.io/github/license/supabase-community/auth-go)
-[![Go Reference](https://pkg.go.dev/badge/github.com/supabase-community/auth-go.svg)](https://pkg.go.dev/github.com/supabase-community/auth-go)
+![example branch parameter](https://github.com/darwishdev/auth-go/actions/workflows/test.yaml/badge.svg?branch=main)
+[![codecov](https://codecov.io/gh/darwishdev/auth-go/branch/main/graph/badge.svg?token=JQQJKETMRX)](https://codecov.io/gh/darwishdev/auth-go)
+![GitHub](https://img.shields.io/github/license/darwishdev/auth-go)
+[![Go Reference](https://pkg.go.dev/badge/github.com/darwishdev/auth-go.svg)](https://pkg.go.dev/github.com/darwishdev/auth-go)
 
 A Golang client library for the [Supabase Auth](https://github.com/supabase/auth) API.
 
@@ -20,7 +20,7 @@ The endpoints for SSO SAML are not tested and `POST /sso/saml/acs` does not prov
 ### Install
 
 ```sh
-go get github.com/supabase-community/auth-go
+go get github.com/darwishdev/auth-go
 ```
 
 ### Usage
@@ -28,7 +28,7 @@ go get github.com/supabase-community/auth-go
 ```go
 package main
 
-import "github.com/supabase-community/auth-go"
+import "github.com/darwishdev/auth-go"
 
 const (
     projectReference = "<your_supabase_project_reference>"
@@ -127,7 +127,7 @@ As Go is typically used on the backend, this library acts purely as a convenient
 
 ## Migrating from gotrue-go
 
-This repository was created as a duplicate of [gotrue-go](https://github.com/supabase-community/gotrue-go).
+This repository was created as a duplicate of [gotrue-go](https://github.com/darwishdev/gotrue-go).
 
 As part of renaming the package, breaking changes to the API were also introduced, to keep consistency with the new naming. The changes can generally be boiled down to:
 

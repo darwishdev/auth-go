@@ -3,10 +3,10 @@ module github.com/darwishdev/auth-go
 go 1.18
 
 require (
-	github.com/cenkalti/backoff/v4 v4.1.3
-	github.com/golang-jwt/jwt/v4 v4.4.2
-	github.com/google/uuid v1.3.0
-	github.com/stretchr/testify v1.8.1
+	github.com/cenkalti/backoff/v4 v4.3.0
+	github.com/golang-jwt/jwt/v4 v4.5.0
+	github.com/google/uuid v1.6.0
+	github.com/stretchr/testify v1.9.0
 	github.com/tomnomnom/linkheader v0.0.0-20180905144013-02ca5825eb80
 )
 
